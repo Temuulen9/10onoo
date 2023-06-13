@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <style>
+        body{
+            background-color: #202020;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .slider{
+            background-color: #fff;
+            padding: 15px;
+            text-align: center;
+            border-radius: 15px;
+        }
+        .slider .image{
+            width: 400px;
+            height: 150px;
+            align-items: center;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="slider">
+        <h1 class="utga">Slider</h1>
+        <img src="" alt="" class="image">
+        <button onclick="prev()"><i class="bi bi-chevron-left"></i>prev</button>
+        <button onclick="next()">next <i class="bi bi-chevron-right"></i></button>
+        <button onclick="autoPlay()">auto</button>
+        <button onclick="stop()">Stop</button>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

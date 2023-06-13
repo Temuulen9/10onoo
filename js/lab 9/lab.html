@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random quote</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #202020;
+        }
+        .quote{
+            background-color: #fff;
+            padding: 15px;
+            border-radius: 10px;
+            width: 300px;
+        }
+        .quote h3{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="quote">
+        <h3 class="author"></h3>
+        <p class="text">Өнөөдрийн ишлэлээ энд дарж хараарай.</p>
+        <button onclick="random()">Click!</button>
+    </div>
+    <script src="lab.js"></script>
+</body>
+</html>

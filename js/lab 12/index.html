@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        body{
+            background-color: brown;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .calculator{
+            background-color: aliceblue;
+            padding: 25px;
+            border-radius: 10px;
+            width: 430px;
+        }
+        .calculator input{
+            width: 80px;
+            height: 80px;
+            margin: 10px;
+            border-radius: 50%;
+            font-size: 24px;
+            cursor: pointer;
+            border: none;
+        }
+        .calculator .output input{
+            border-radius: 0;
+            width: 90%;
+            background-color: rgb(185, 180, 180);
+            outline: none;
+            text-align: right;
+            font-size: 25px;
+            padding-right: 20px;
+        }
+        .calculator .op{
+            background-color: brown;
+            color: #fff;
+        }
+        .calculator .equal{
+            width: 180px;
+            border-radius: 0;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="calculator">
+        <div class="output">
+            <input type="text" name="display" class="display" value="0">
+        </div>
+        <div>
+            <input type="button" value="C" class="op" onclick = "clean()">
+            <input type="button" value="DEL" class="op" onclick="del()">
+            <input type="button" value="%" class="op" onclick="kk(this)">
+            <input type="button" value="/" class="op" onclick="">
+        </div>
+        <div>
+            <input type="button" value="7" class="val">
+            <input type="button" value="8" class="val">
+            <input type="button" value="9" class="val">
+            <input type="button" value="*" class="op">
+        </div>
+        <div>
+            <input type="button" value="4" class="val">
+            <input type="button" value="5" class="val">
+            <input type="button" value="6" class="val">
+            <input type="button" value="-" class="op">
+        </div>
+        <div>
+            <input type="button" value="1" class="val">
+            <input type="button" value="2" class="val">
+            <input type="button" value="3" class="val">
+            <input type="button" value="+" class="op">
+        </div>
+        <div>
+            <input type="button" value="." class="op">
+            <input type="button" value="0" class="val">
+            <input type="button" value="=" class="op equal" onclick="bodoh()">
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
